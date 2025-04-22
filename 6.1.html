@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.1</title>
+  </head>
+  <body></body>
+  <script>
+    function removeLetters(str, lettersToRemove){
+        let result = "";
+    for (let char of str){
+        if (!lettersToRemove.includes(char)){
+            result += char;
+        }
+      }
+    return result;
+    }
+
+        let text = "hello world";
+        let toRemove = ["e", "d"];
+        let result = removeLetters(text, toRemove);
+        console.log(result);
+  </script>
+</html>
