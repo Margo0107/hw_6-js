@@ -7,19 +7,19 @@
   </head>
   <body></body>
   <script>
-    function removeLetters(str, lettersToRemove){
-        let result = "";
-    for (let char of str){
-        if (!lettersToRemove.includes(char)){
-            result += char;
+    function removeLetters(str, lettersToRemove) {
+      let result = "";
+      for (let char of str) {
+        if (!lettersToRemove.includes(char)) {
+          result += char;
         }
       }
-    return result;
+      return result;
     }
 
-        let text = "hello world";
-        let toRemove = ["e", "d"];
-        let result = removeLetters(text, toRemove);
-        console.log(result);
+    const text = "hello world";
+    const toRemove = ["e", "d"];
+    const result = removeLetters(text, toRemove);
+    console.log(result);
   </script>
 </html>
